@@ -1,0 +1,54 @@
+# OS & IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.log
+
+# Credentials & Secrets (Never track these!)
+.ssh/
+.gnupg/
+*.key
+*.pem
+*.p12
+.env
+.mcp-auth
+.node_repl_history
+.zsh_history
+.zsh_sessions/
+
+# Gemini CLI
+gemini/google_accounts.json
+gemini/oauth_creds.json
+gemini/history/
+gemini/tmp/
+gemini/state.json
+gemini/projects.json
+
+# Agents
+agents/.skill-lock.json
+cagent/store/
+
+# Google Cloud SDK
+config/gcloud/logs/
+config/gcloud/access_tokens.db
+config/gcloud/default_configs.db
+config/gcloud/virtenv/
+config/gcloud/completion.cache
+config/gcloud/active_config
+
+# GitHub CLI
+# (hosts.yml is usually safe if it only contains 'user', 
+# but ignore it if it contains 'oauth_token')
+# config/gh/hosts.yml 
+
+# App Specific
+config/iterm2/sockets/
+config/filezilla/recentservers.xml
+config/filezilla/sitemanager.xml
+config/filezilla/queue.sqlite3
+config/gcloud/hidden_gcloud_config_universe_descriptor_data_cache_configs.db
+config/gcloud/config_sentinel
+node_modules/
+agents/skills/brainstorming/scripts/node_modules/
