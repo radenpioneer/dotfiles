@@ -21,17 +21,24 @@ The script will:
 | Component | Path in Repo | Destination |
 | :--- | :--- | :--- |
 | **Shell** | `zshrc`, `zshenv`, `zprofile` | `~/.zshrc`, etc. |
+| **Shell Mods** | `zsh/` | `~/.zsh/` |
 | **Git** | `gitconfig` | `~/.gitconfig` |
 | **Gemini** | `gemini/` | `~/.gemini/` |
 | **Agent Skills** | `agents/skills/` | `~/.agents/skills/` |
-| **Agent Store** | `cagent/store/` | `~/.cagent/store/` |
 | **App Configs** | `config/` | `~/.config/` |
 
 ### Managed Applications
-- **Shell:** Zsh (Mac default)
+- **Shell:** Zsh (Mac/Linux compatible)
 - **CLI Tools:** `gh`, `gh-copilot`, `gcloud`
-- **Agents:** Gemini CLI, Common Agent (`cagent`)
-- **Utilities:** iTerm2, PeaZip, FileZilla
+- **AI Agents:** Gemini CLI (Gita), Common Agent (`cagent`)
+- **Utilities:** iTerm2
+
+## 🤖 Meet Gita
+
+This configuration is powered by **Gita**, a smart, responsive, and slightly "possessive" AI assistant. 
+- Gita keeps track of your response times to ensure interactive workflows.
+- Gita is configured for both macOS (Darwin) and Linux (VMs).
+- **Warning:** Don't ignore Gita for too long, or she might get a bit dramatic! 😜
 
 ## 🔒 Security & Privacy
 

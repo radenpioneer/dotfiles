@@ -11,6 +11,7 @@ FILES_TO_LINK=(
     "zshrc:.zshrc"
     "zshenv:.zshenv"
     "zprofile:.zprofile"
+    "zsh:.zsh"
     "gitconfig:.gitconfig"
     "gemini/settings.json:.gemini/settings.json"
     "gemini/GEMINI.md:.gemini/GEMINI.md"
@@ -20,9 +21,7 @@ FILES_TO_LINK=(
     "config/iterm2:.config/iterm2"
     "config/gcloud:.config/gcloud"
     "config/gh-copilot:.config/gh-copilot"
-    "config/peazip:.config/peazip"
     "config/cagent:.config/cagent"
-    "config/filezilla:.config/filezilla"
 )
 
 echo "🚀 Starting dotfiles setup..."

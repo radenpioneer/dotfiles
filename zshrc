@@ -104,30 +104,44 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/radenpioneer/.lmstudio/bin"
+export PATH="$PATH:$HOME/.lmstudio/bin"
+
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/radenpioneer/.docker/completions $fpath)
+# Only run on macOS (Darwin) since Docker Desktop is Mac-specific here
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  fpath=($HOME/.docker/completions $fpath)
+fi
+
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 eval "$(gh copilot alias -- zsh)"
 
-# Added by Antigravity
-export PATH="/Users/radenpioneer/.antigravity/antigravity/bin:$PATH"
+# Added by Antigravity (Mac only)
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+fi
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/radenpioneer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/radenpioneer/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/radenpioneer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/radenpioneer/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # bun completions
-[ -s "/Users/radenpioneer/.oh-my-zsh/completions/_bun" ] && source "/Users/radenpioneer/.oh-my-zsh/completions/_bun"
+[ -s "$HOME/.oh-my-zsh/completions/_bun" ] && source "$HOME/.oh-my-zsh/completions/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Load all custom Zsh configurations from ~/.zsh/
+if [ -d "$HOME/.zsh" ]; then
+  for file in "$HOME/.zsh"/*.zsh; do
+    [ -f "$file" ] && source "$file"
+  done
+fi
