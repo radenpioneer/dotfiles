@@ -15,6 +15,7 @@ FILES_TO_LINK=(
     "gitconfig:.gitconfig"
     "gemini/settings.json:.gemini/settings.json"
     "gemini/GEMINI.md:.gemini/GEMINI.md"
+    "claude/CLAUDE.md:.claude/CLAUDE.md"
     "agents/skills:.agents/skills"
     "cagent/store:.cagent/store"
     "config/gh:.config/gh"
