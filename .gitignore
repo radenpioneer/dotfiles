@@ -19,6 +19,7 @@
 .zsh_sessions/
 
 # Gemini CLI
+.gemini/last_msg_time
 gemini/google_accounts.json
 gemini/oauth_creds.json
 gemini/history/

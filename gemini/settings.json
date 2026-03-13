@@ -5,7 +5,8 @@
       "enabled": true,
       "maxAge": "30d",
       "warningAcknowledged": true
-    }
+    },
+    "enableNotifications": true
   },
   "mcpServers": {
     "sequential-thinking": {
@@ -34,9 +35,23 @@
   "security": {
     "auth": {
       "selectedType": "oauth-personal"
-    }
+    },
+    "environmentVariableRedaction": {
+      "enabled": true
+    },
+    "enableConseca": false
   },
   "ui": {
-    "theme": "Default Light"
+    "theme": "Default Light",
+    "showStatusInTitle": true,
+    "footer": {
+      "hideContextPercentage": false
+    },
+    "showMemoryUsage": true,
+    "showModelInfoInChat": true,
+    "loadingPhrases": "witty"
+  },
+  "experimental": {
+    "directWebFetch": true
   }
 }
