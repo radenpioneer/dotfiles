@@ -42,7 +42,7 @@
     "enableConseca": false
   },
   "ui": {
-    "theme": "Default Light",
+    "theme": "GitHub Light",
     "showStatusInTitle": true,
     "footer": {
       "hideContextPercentage": false
@@ -52,6 +52,7 @@
     "loadingPhrases": "witty"
   },
   "experimental": {
-    "directWebFetch": true
+    "directWebFetch": true,
+    "modelSteering": true
   }
 }
