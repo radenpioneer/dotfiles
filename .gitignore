@@ -31,6 +31,9 @@ gemini/projects.json
 agents/.skill-lock.json
 cagent/store/
 
+# Google Cloud SDK (auto-generated)
+config/gcloud/cache/
+
 # Google Cloud SDK
 config/gcloud/logs/
 config/gcloud/access_tokens.db

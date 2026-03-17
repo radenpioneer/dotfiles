@@ -17,7 +17,7 @@ FILES_TO_LINK=(
     "gemini/GEMINI.md:.gemini/GEMINI.md"
     "claude/CLAUDE.md:.claude/CLAUDE.md"
     "agents/skills:.agents/skills"
-    "cagent/store:.cagent/store"
+    "bin/kerang:bin/kerang"
     "config/gh:.config/gh"
     "config/iterm2:.config/iterm2"
     "config/gcloud:.config/gcloud"

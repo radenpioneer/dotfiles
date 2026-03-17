@@ -34,7 +34,7 @@
   },
   "security": {
     "auth": {
-      "selectedType": "oauth-personal"
+      "selectedType": "gemini-api-key"
     },
     "environmentVariableRedaction": {
       "enabled": true
