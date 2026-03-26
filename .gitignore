@@ -62,3 +62,10 @@ blackbox/
 config/gcloud/.last_survey_prompt.yaml
 config/gcloud/.last_update_check.json
 
+# Blackbox CLI
+.blackboxcli/
+
+# Google Cloud SDK credentials
+config/gcloud/application_default_credentials.json
+config/gcloud/credentials.db
+config/gcloud/legacy_credentials/
