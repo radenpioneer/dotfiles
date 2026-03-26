@@ -54,8 +54,11 @@ config/filezilla/sitemanager.xml
 config/filezilla/queue.sqlite3
 config/gcloud/hidden_gcloud_config_universe_descriptor_data_cache_configs.db
 config/gcloud/config_sentinel
-node_modules/
-agents/skills/brainstorming/scripts/node_modules/
-config/gcloud/application_default_credentials.json
-config/gcloud/credentials.db
-config/gcloud/legacy_credentials/
+
+# Blackbox related files
+blackbox/
+
+# Google Cloud SDK temporary files
+config/gcloud/.last_survey_prompt.yaml
+config/gcloud/.last_update_check.json
+

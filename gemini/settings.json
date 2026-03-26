@@ -34,7 +34,7 @@
   },
   "security": {
     "auth": {
-      "selectedType": "gemini-api-key"
+      "selectedType": "oauth-personal"
     },
     "environmentVariableRedaction": {
       "enabled": true
@@ -42,7 +42,7 @@
     "enableConseca": false
   },
   "ui": {
-    "theme": "GitHub Light",
+    "theme": "Atom One",
     "showStatusInTitle": true,
     "footer": {
       "hideContextPercentage": false
@@ -54,5 +54,9 @@
   "experimental": {
     "directWebFetch": true,
     "modelSteering": true
+  },
+  "ide": {
+    "hasSeenNudge": true,
+    "enabled": true
   }
 }

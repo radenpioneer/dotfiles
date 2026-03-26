@@ -16,6 +16,7 @@ FILES_TO_LINK=(
     "gemini/settings.json:.gemini/settings.json"
     "gemini/GEMINI.md:.gemini/GEMINI.md"
     "claude/CLAUDE.md:.claude/CLAUDE.md"
+    "blackbox/BLACKBOX.md:.blackbox/BLACKBOX.md"
     "agents/skills:.agents/skills"
     "bin/kerang:bin/kerang"
     "config/gh:.config/gh"
